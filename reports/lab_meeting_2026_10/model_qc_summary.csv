@@ -1,0 +1,4 @@
+model,generated_success,frozen_targets,global_qc_pass,speakers,source_file
+F5-TTS,160,160,157,16,source_results/preservation_sample_qc.csv
+CosyVoice 2,160,160,159,16,source_results/preservation_sample_qc.csv
+OpenVoice V2,160,160,160,16,source_results/preservation_sample_qc.csv

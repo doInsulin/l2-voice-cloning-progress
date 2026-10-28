@@ -1,0 +1,8 @@
+﻿contrast,estimate,ci_low_95,ci_high_95,n_common_speakers,support
+model_effect_EH_F5_minus_Qwen,0.16997277525732504,-0.004977300946126049,0.3472119179564866,11,model-shared strict token triplets within each vowel contrast; EH targets also pass Qwen WER<=0.5 in all conditions
+model_effect_IH_F5_minus_Qwen,0.14694657634587796,-0.09924933345820397,0.4536877514427055,11,model-shared strict token triplets within each vowel contrast; EH targets also pass Qwen WER<=0.5 in all conditions
+vowel_effect_F5_EH_minus_IH,0.08320271266963235,-0.0050783098629826095,0.16615513909742657,11,model-shared strict token triplets within each vowel contrast; EH targets also pass Qwen WER<=0.5 in all conditions
+vowel_effect_Qwen_EH_minus_IH,0.060176513758185314,-0.2746465401610652,0.40947814541871463,11,model-shared strict token triplets within each vowel contrast; EH targets also pass Qwen WER<=0.5 in all conditions
+average_model_effect,0.1584596758016015,0.004144977178042144,0.3525215425921024,11,model-shared strict token triplets within each vowel contrast; EH targets also pass Qwen WER<=0.5 in all conditions
+average_vowel_effect,0.07168961321390883,-0.11512423260728127,0.26471634103128144,11,model-shared strict token triplets within each vowel contrast; EH targets also pass Qwen WER<=0.5 in all conditions
+interaction_difference_in_differences,0.023026198911447072,-0.29979014273669796,0.33661840147473115,11,model-shared strict token triplets within each vowel contrast; EH targets also pass Qwen WER<=0.5 in all conditions

@@ -1,0 +1,32 @@
+{
+  "mode_summaries": [
+    {
+      "mode": "icl_audio_text",
+      "n_targets": 96,
+      "n_valid": 96,
+      "n_monotonic": 55,
+      "estimate": 0.684466710804642,
+      "ci_low": 0.5807046205377818,
+      "ci_high": 0.7883689043411639,
+      "n_speakers": 16
+    },
+    {
+      "mode": "speaker_vector_only",
+      "n_targets": 96,
+      "n_valid": 96,
+      "n_monotonic": 51,
+      "estimate": 0.7761081545888214,
+      "ci_low": 0.6519166332786184,
+      "ci_high": 0.908616409953997,
+      "n_speakers": 16
+    }
+  ],
+  "paired_speaker_vector_minus_icl": {
+    "n_paired_targets": 96,
+    "estimate": 0.09164144378417942,
+    "ci_low": -0.06452661423805928,
+    "ci_high": 0.2389723889572982,
+    "n_speakers": 16
+  },
+  "frozen_f5_overall_reference": "research/final_confirmatory_experiment/reference_controllability_summary.csv"
+}

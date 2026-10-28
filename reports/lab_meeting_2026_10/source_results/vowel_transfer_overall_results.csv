@@ -1,0 +1,13 @@
+﻿outcome,estimate,ci_low_95,ci_high_95,n_speakers,n_targets,interpretation
+generated_axis_p,0.2612467200694936,0.2011777354578646,0.32140184493185486,12,48,generated change per one-unit measured reference EH-axis change
+generated_midpoint_p,0.28072061651191044,0.2184010999891211,0.3420172525392883,12,48,generated change per one-unit measured reference EH-axis change
+generated_axis_p_20,0.26757924569742214,0.2072627936272908,0.32606827685588874,12,48,generated change per one-unit measured reference EH-axis change
+generated_axis_p_35,0.27723370714539275,0.20973515964301573,0.34437240247846174,12,48,generated change per one-unit measured reference EH-axis change
+generated_axis_p_50,0.28072061651191044,0.216375596329605,0.34264347405068424,12,48,generated change per one-unit measured reference EH-axis change
+generated_axis_p_65,0.2555459168269596,0.1958263252032469,0.31389434555801987,12,48,generated change per one-unit measured reference EH-axis change
+generated_axis_p_80,0.2251541141657835,0.16365561257165437,0.2854215199137289,12,48,generated change per one-unit measured reference EH-axis change
+generated_mean_log_vowel_duration,-0.0058953714863660125,-0.01964616986852499,0.007413868977397169,12,48,generated change per one-unit measured reference EH-axis change
+generated_f0_range_st,0.2839899594360004,-0.16147203374807317,1.030170365862879,12,48,generated change per one-unit measured reference EH-axis change
+generated_f0_median_st,-0.06285453281778063,-0.11907239337937228,-0.009863938371119362,12,48,generated change per one-unit measured reference EH-axis change
+generated_log_total_duration,-6.916572318178735e-33,-1.9936267978597262e-32,4.828969625310634e-33,12,48,generated change per one-unit measured reference EH-axis change
+ecapa_cosine_to_original_condition,0.0039095001165777585,0.0004458877848678742,0.007631240418653128,12,48,generated change per one-unit measured reference EH-axis change
