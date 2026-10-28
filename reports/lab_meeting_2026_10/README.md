@@ -1,6 +1,6 @@
 # October 2026 lab meeting: result provenance
 
-Open [`../../docs/lab_meeting_progress_2026_10.html`](../../docs/lab_meeting_progress_2026_10.html) after downloading the project folder. The file is offline HTML; its seven SVG figures load from `figures/` by relative path. The report is a meeting presentation about experimental work, not a thesis draft.
+Open [`../../docs/lab_meeting_progress_2026_10.html`](../../docs/lab_meeting_progress_2026_10.html) after downloading it. The Chinese HTML is self-contained: all 28 original experiment PNGs are embedded as data URIs, so the page does not depend on relative image loading. The separate byte-for-byte PNG copies in `figures/source/` remain independently downloadable. The report is a meeting presentation about experimental work, not a thesis draft.
 
 ## Research sequence and evidential status
 
@@ -27,11 +27,15 @@ From the project root, run:
 python reports/lab_meeting_2026_10/build_report.py
 ```
 
-This standard-library script regenerates `experiment_summary.csv`, `experiment_summary.json`, `confirmatory_results.csv`, `model_qc_summary.csv`, seven SVG figures, and `docs/lab_meeting_progress_2026_10.html`. Figures are generated directly from the named packaged result files. No external fonts, scripts, chart servers, or network requests are used.
+This standard-library script regenerates `experiment_summary.csv`, `experiment_summary.json`, `confirmatory_results.csv`, `model_qc_summary.csv`, seven supplementary SVGs, `figure_registry.csv`, and the Chinese `docs/lab_meeting_progress_2026_10.html`. `render_chinese_report.py` assembles the report from the packaged source PNGs and verified result tables. The SVGs are generated directly from the named packaged result files but are not substituted for the 28 original experimental figures. No external fonts, scripts, chart servers, or network requests are used.
 
 `experiment_summary.csv` and `.json` contain the same 35 records and required fields: experiment, trait, model, speakers, n, metric, estimate, CI bounds, interpretation, status, and source file. Here `n` means targets, matched pairs, or speakers according to the metric; read `interpretation` and `speakers` with it. `confirmatory_results.csv` contains the frozen F5 intervention and segmental rows, including the IH boundary. `model_qc_summary.csv` derives generation and QC denominators from final gate and sample-QC files.
 
 ## Figure provenance
+
+`figure_registry.csv` lists all 28 original PNGs, their original `research/` paths, SHA-256 hashes, Chinese titles, reading guides, and claim boundaries. Ten are displayed at full width in the main scientific story; the other 18 are displayed in the final figure atlas. All 28 appear in the HTML and can also be downloaded individually from `figures/source/`. They are unchanged copies of completed experiment figures. The original axes remain in English for provenance; the surrounding report text and figure explanations are in Chinese.
+
+The seven supplementary SVGs below are still generated for optional reuse. The Chinese report uses the original experiment PNGs for its evidence narrative.
 
 | Figure | Script | Source snapshots | Scientific question |
 | --- | --- | --- | --- |
@@ -43,7 +47,7 @@ This standard-library script regenerates `experiment_summary.csv`, `experiment_s
 | `figures/local_vowel_transfer.svg` | `build_report.py` | four local-vowel overall tables | Does local vowel controllability depend on the tested model and contrast? |
 | `figures/selective_preservation.svg` | `build_report.py` | synthesis of the preceding verified results | How do the measured output patterns fit together? |
 
-Every plot states its metric and denominator either in the graphic or caption. Confidence intervals are 95% speaker bootstrap intervals from the frozen analyses. The seven figures use grayscale plus teal and ochre, with shape/labels that remain legible when printed in grayscale.
+The Chinese figure captions state the metric, sample where relevant, how to read the plot, and a scientific boundary. The original PNGs preserve the source analysis color schemes; their estimates and uncertainty come from the named frozen analyses. The seven supplementary SVGs use grayscale plus teal and ochre.
 
 ## Version reconciliation and claim limits
 

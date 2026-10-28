@@ -1,5 +1,6 @@
 """Check the offline report package, numerical joins, and file links."""
 import csv
+import base64
 import hashlib
 import html.parser
 import json
@@ -24,12 +25,22 @@ class Links(html.parser.HTMLParser):
 doc = DOC.read_text(encoding="utf-8")
 parser = Links(); parser.feed(doc)
 anchors = set(re.findall(r'id="([^"]+)"', doc))
+inline_image_hashes = []
 for link in parser.links:
     if link.startswith("#"):
         assert link[1:] in anchors, link
+    elif link.startswith("data:image/png;base64,"):
+        inline_image_hashes.append(hashlib.sha256(base64.b64decode(link.split(",",1)[1])).hexdigest())
     else:
         assert not re.match(r"^[a-z]+://", link), f"network dependency: {link}"
         assert (DOC.parent / link).resolve().is_file(), f"broken HTML link: {link}"
+assert len(inline_image_hashes) == 28
+with (HERE / "figure_registry.csv").open(encoding="utf-8", newline="") as f:
+    figures = list(csv.DictReader(f))
+assert len(figures) == 28
+assert sorted(inline_image_hashes) == sorted(r["sha256"] for r in figures)
+for r in figures:
+    assert hashlib.sha256((HERE / r["file"]).read_bytes()).hexdigest() == r["sha256"]
 
 for p in (HERE / "figures").glob("*.svg"):
     ET.parse(p)
@@ -60,7 +71,8 @@ for readme in (ROOT / "README.md", HERE / "README.md"):
 for path in ROOT.rglob("*"):
     if not path.is_file() or ".git" in path.parts:
         continue
-    assert path.stat().st_size < 2_000_000, f"unexpected large file: {path}"
+    limit = 15_000_000 if path == DOC else 2_000_000
+    assert path.stat().st_size < limit, f"unexpected large file: {path}"
     assert path.suffix.lower() not in {".wav", ".flac", ".pt", ".pth", ".ckpt", ".safetensors"}, path
 
 original_root = ROOT.parent / "research"
@@ -69,6 +81,9 @@ if original_root.is_dir():
     assert len(mapping) >= 20
     for packaged, original in mapping:
         assert hashlib.sha256((SRC / packaged).read_bytes()).digest() == hashlib.sha256((original_root / original).read_bytes()).digest(), packaged
+    for r in figures:
+        original = ROOT.parent / r["original_path"]
+        assert hashlib.sha256(original.read_bytes()).hexdigest() == r["sha256"], original
 
 by = {(r["experiment"],r["trait"]): r for r in json_rows}
 expected = {
@@ -81,5 +96,6 @@ expected = {
 for key,val in expected.items():
     assert abs(by[key]["estimate"]-val) < 1e-12, key
 assert "thesis draft" not in doc.lower()
-assert "28 October 2026" in doc
-print(f"Verified {len(parser.links)} HTML links/assets, README links, 7 SVG files, {len(csv_rows)} result records, frozen headline estimates, source snapshots when present, and package size rules.")
+assert "2026 年 10 月 28 日" in doc
+assert '<html lang="zh-CN">' in doc
+print(f"Verified {len(parser.links)} HTML links/assets, 28 embedded original figures, README links, 7 SVG files, {len(csv_rows)} result records, frozen headline estimates, source snapshots when present, and package size rules.")
