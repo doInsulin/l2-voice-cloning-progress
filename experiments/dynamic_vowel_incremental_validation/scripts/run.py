@@ -28,6 +28,8 @@ def write(name,rows):
     with (OUT/name).open('w',encoding='utf-8-sig',newline='') as f:
         w=csv.DictWriter(f,fieldnames=keys);w.writeheader();w.writerows(rows)
 def vec(row,prefix):return np.array([json.loads(row[prefix+'log_f1']),json.loads(row[prefix+'log_f2'])],float).T
+def hzvec(row,prefix):return np.array([json.loads(row[prefix+'f1_hz']),json.loads(row[prefix+'f2_hz'])],float).T
+def bark(x):return 26.81/(1+1960/x)-.53
 def boot(vals,key,n=8000):
     a=np.asarray(vals,float);r=np.random.default_rng(int(hashlib.sha256(f'{SEED}|{key}'.encode()).hexdigest()[:8],16))
     z=a[r.integers(len(a),size=(n,len(a)))].mean(axis=1)
@@ -57,9 +59,11 @@ def main():
         midpoint=float(np.sqrt(np.mean(d[2]**2)))
         residual=float(np.sqrt(np.mean((d-d[2])**2)))
         full=float(np.sqrt(np.mean(d**2)))
+        db=bark(hzvec(r,'clone_'))-bark(hzvec(r,'original_'))
+        bark_residual=float(np.sqrt(np.mean((db-db[2])**2)))
         arows.append(dict(model=r['model'],speaker=r['speaker'],phone=r['phone'],token_key=r['token_key'],
                           midpoint_rmse=midpoint,residual_rmse=residual,full_rmse=full,
-                          residual_to_midpoint=residual/max(midpoint,1e-9)))
+                          residual_to_midpoint=residual/max(midpoint,1e-9),bark_residual_rmse=bark_residual))
     # Natural matched speaker/vowel original-original residual baseline, first 200 deterministic pairs.
     nb=defaultdict(list)
     for r in natural:
@@ -81,7 +85,7 @@ def main():
     asummary=[]
     for m in MODELS:
         rr=[x for x in arows if x['model']==m]
-        for met in ('midpoint_rmse','residual_rmse','full_rmse','residual_nds'):
+        for met in ('midpoint_rmse','residual_rmse','full_rmse','residual_nds','bark_residual_rmse'):
             asummary.append(summarize(rr,met,'A|'+m,met))
     # LOSO fixed-shrinkage LDA: independent vowel identity label, secondary only.
     rows=[r for r in primary if r['model']=='f5_tts']
@@ -171,6 +175,16 @@ def main():
             pv=float((1+(null>=obs).sum())/(len(null)+1))
             bsum.append(dict(support=support,contrast=contrast,metric='time_shape_omnibus_rms',estimate=obs,signflip_p=pv,n_pairs=len(rr),n_speakers=len(sm)))
             sensitivity.append(dict(analysis='B',support=support,contrast=contrast,metric='shape_signflip_p',estimate=pv,n_tokens=len(rr),n_speakers=len(sm)))
+            dense={s:v for s,v in by.items() if len(v)>=4}
+            if len(dense)>=2:
+                dm=np.array([np.mean(v,axis=0) for v in dense.values()])
+                for metric,values in [('five_point_mean',dm.mean(axis=1)),('early_late',(dm[:,3]+dm[:,4]-dm[:,0]-dm[:,1])/2)]:
+                    e,lo,hi=boot(values,f'B|{support}|{contrast}|ge4|{metric}')
+                    sensitivity.append(dict(analysis='B',support=support+'_ge4_pairs',contrast=contrast,metric=metric,
+                                            estimate=e,ci_low_95=lo,ci_high_95=hi,n_tokens=sum(map(len,dense.values())),n_speakers=len(dense)))
+            else:
+                sensitivity.append(dict(analysis='B',support=support+'_ge4_pairs',contrast=contrast,metric='five_point_mean',
+                                        estimate='',n_tokens=sum(map(len,dense.values())),n_speakers=len(dense),inference='NOT_ESTIMABLE'))
     track_groups=defaultdict(set)
     for r in dyn:
         if r['track_qc_pass']=='1':track_groups[r['token_key']].add(r['model'])
@@ -260,7 +274,7 @@ def main():
                                             q025=float(np.quantile([r['delta_vs_static'] for r in null_rows],.025)),
                                             q975=float(np.quantile([r['delta_vs_static'] for r in null_rows],.975))),
             'b_summary':bsum,'c_summary':csummary,'c_candidate_tokens':len(crows),'c_duration_matched_tokens':len(cprim),
-            'source_sha256':{str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in [DYN/'dynamic_vowel_tokens.csv',DYN/'natural_dynamic_vowels.csv',PREV/'reconstruction_pair_results.csv',FINAL/'natural_vowel_axes.json']}}
+            'source_sha256':{str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in [DYN/'dynamic_vowel_tokens.csv',DYN/'natural_dynamic_vowels.csv',PREV/'reconstruction_pair_results.csv',PREV/'reconstruction_token_trajectories.csv',PREV/'reconstruction_speaker_results.csv',FINAL/'natural_vowel_axes.json']}}
     (OUT/'analysis_summary.json').write_text(json.dumps(result,indent=2,ensure_ascii=False,allow_nan=False),encoding='utf-8')
     print(json.dumps({'A':len(arows),'B':len(brows),'C':len(crows),'C_matched':len(cprim),'figures':len(list(FIG.glob('*.png')))},indent=2))
 if __name__=='__main__':main()

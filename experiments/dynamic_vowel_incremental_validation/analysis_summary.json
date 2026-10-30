@@ -39,6 +39,15 @@
       "n_speakers": 16
     },
     {
+      "analysis": "A|f5_tts",
+      "metric": "bark_residual_rmse",
+      "estimate": 0.36912145958853526,
+      "ci_low_95": 0.33263263444438457,
+      "ci_high_95": 0.4104296033687994,
+      "n_tokens": 214,
+      "n_speakers": 16
+    },
+    {
       "analysis": "A|cosyvoice2",
       "metric": "midpoint_rmse",
       "estimate": 0.1308436460569189,
@@ -75,6 +84,15 @@
       "n_speakers": 16
     },
     {
+      "analysis": "A|cosyvoice2",
+      "metric": "bark_residual_rmse",
+      "estimate": 0.40198630273893177,
+      "ci_low_95": 0.3630686864128081,
+      "ci_high_95": 0.4431851784473576,
+      "n_tokens": 214,
+      "n_speakers": 16
+    },
+    {
       "analysis": "A|openvoice_v2",
       "metric": "midpoint_rmse",
       "estimate": 0.19194774823271554,
@@ -107,6 +125,15 @@
       "estimate": 0.8623488259470957,
       "ci_low_95": 0.7751909487976497,
       "ci_high_95": 0.9545591652804793,
+      "n_tokens": 214,
+      "n_speakers": 16
+    },
+    {
+      "analysis": "A|openvoice_v2",
+      "metric": "bark_residual_rmse",
+      "estimate": 0.42776719363250754,
+      "ci_low_95": 0.3855614547101572,
+      "ci_high_95": 0.47328788745907246,
       "n_tokens": 214,
       "n_speakers": 16
     }
@@ -523,6 +550,8 @@
     "research\\27_dynamic_vowel_analysis\\dynamic_vowel_tokens.csv": "18f00661b92954385d23b33a849d8d8be989213ef4b5ec9cd8b4fa2e14307ba9",
     "research\\27_dynamic_vowel_analysis\\natural_dynamic_vowels.csv": "9f2e2ef96c45cd08a4cf6d8e0692a192177732bd7e7579d98dfee1af3ff23519",
     "research\\33_dynamic_vowel_trajectory_20261022\\reconstruction_pair_results.csv": "4e52f421f834082d2802d76b1284c7a167bb4e60f1722238526935b725dd25e6",
+    "research\\33_dynamic_vowel_trajectory_20261022\\reconstruction_token_trajectories.csv": "30179036456f4ab606c522a81657ffcea2bec01940b9d441818b6c283d74ee6e",
+    "research\\33_dynamic_vowel_trajectory_20261022\\reconstruction_speaker_results.csv": "61ac94ce6cdf372b26ef727d70783d17d9f031e093df8c8496b3fe8a7c35446a",
     "research\\final_confirmatory_experiment\\natural_vowel_axes.json": "7ff8fb47fe7e053af17984bf95a69ce826a77093d4ea217470a4309cddd2db07"
   }
 }

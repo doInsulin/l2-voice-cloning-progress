@@ -19,3 +19,7 @@ F5 strict QC only. Match each clone target to its own original and to a differen
 ## Decision
 
 GO requires a robust, noncircular dynamic increment (B shape or C controlled shape, with QC/speaker sensitivity), not simply extra feature dimensionality. LIMITED GO for descriptive extension only. NO GO if all dynamic increments fail or are too unstable. Do not automatically generate new reference audio. Preserve original confirmatory midpoint claims and manuscript.
+
+## Post-run amendment (2026-10-30; explicitly exploratory)
+
+After inspecting the first run, a Bark-transformed version of A's midpoint-anchored residual was added to satisfy the requested normalization check. It was **not** part of the frozen primary gate and cannot upgrade the decision. The predeclared ≥4-pairs/speaker B sensitivity was also implemented in the results table after the first run; its rule itself was frozen above and in the inherited 2026-10-22 design.

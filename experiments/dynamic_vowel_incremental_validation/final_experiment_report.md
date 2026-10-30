@@ -26,13 +26,13 @@ RQ-D1：若动态增加实质信息，同一 token support 上的 midpoint-plus-
 
 同一原声–克隆对定义 `D(t)=clone−original`，midpoint 为 `D50`，动态残差 `R(t)=D(t)−D50`。这是控制 midpoint 后可观测的差异，不是独立预测目标；因此**不**把残差非零或 full distance 更大解读为增量 R²。speaker 等权的 residual log-formant RMSE：F5 0.072 [0.066, 0.078]，CosyVoice 2 0.078 [0.072, 0.084]，OpenVoice V2 0.081 [0.073, 0.089]；相对同人跨 utterance 自然残差的比值分别为 0.760 [0.699, 0.820]、0.830 [0.765, 0.905]、0.862 [0.775, 0.955]。这些数值描述 midpoint 未捕获的测量变化，但同文本 clone–original 与跨句自然基线并非同一分布。
 
-独立标签辅助检验用 clone 的元音类别：16-speaker leave-one-speaker-out，训练折内 z-score，固定 shrinkage LDA。静态 S1 的 pooled balanced accuracy 0.700、macro-F1 0.699；去中心 shape S2 为 0.426/0.414；静态+shape S3 为 0.715/0.713；full 10D S4 为 0.691/0.690。S3−S1 pooled 差 +0.015，但**speaker 等权配对差 −0.010 [−0.074, 0.048]**。100 次 S1+10 个独立噪声维度的负对照平均差 −0.043，2.5–97.5% 分位数 [−0.084, −0.005]。维度增加可损害解码；本次 S3 小幅 pooled 优势不稳定。更重要的是类别解码也不是 clone distortion 的独立标签，不能用它声称重建解释力增加。common-track 422-token sensitivity 的 raw residual RMSE 为 0.068/0.071/0.076（F5/CosyVoice/OpenVoice）；与 strict 方向一致。
+独立标签辅助检验用 clone 的元音类别：16-speaker leave-one-speaker-out，训练折内 z-score，固定 shrinkage LDA。静态 S1 的 pooled balanced accuracy 0.700、macro-F1 0.699；去中心 shape S2 为 0.426/0.414；静态+shape S3 为 0.715/0.713；full 10D S4 为 0.691/0.690。S3−S1 pooled 差 +0.015，但**speaker 等权配对差 −0.010 [−0.074, 0.048]**。100 次 S1+10 个独立噪声维度的负对照平均差 −0.043，2.5–97.5% 分位数 [−0.084, −0.005]。维度增加可损害解码；本次 S3 小幅 pooled 优势不稳定。更重要的是类别解码也不是 clone distortion 的独立标签，不能用它声称重建解释力增加。common-track 422-token sensitivity 的 raw residual RMSE 为 0.068/0.071/0.076（F5/CosyVoice/OpenVoice）；与 strict 方向一致。**事后探索性** Bark 变换的残差 RMSE 为 0.369 [0.333, 0.410]、0.402 [0.363, 0.443]、0.428 [0.386, 0.473] Bark；它只检查单位变换下残差仍可测，不参与决策门槛。
 
 ## 7. Experiment B: Time-resolved reconstruction
 
 使用冻结 speaker-specific canonical axis 和 matched error/control；每对先形成完整五点 DID，再在 speaker 内平均，最后跨 speaker 推断。严格 EH 五点 DID 约为 20% +0.729、35% +0.818、50% +0.787、65% +0.960、80% +1.196，五点平均 +0.898 [约 0.445, 1.497]（重新抽样 seed，仍与旧结果相容），中点 +0.787 [0.150, 1.594]。预定晚段减早段 +0.305 [−0.083, 0.750]；去平均的 canonical projection 轨迹整体 sign-flip **p=.173**。旧二维 shape omnibus p=.419，其定义不同，两者均未建立稳健形状效应。EH track support 39 对/11 人的时间形状 p=.183。
 
-严格 IH 五点平均 +0.512 [−0.090, 1.143]（18 对/9 人），中点 +0.348 [−0.262, 0.921]；晚段减早段 −0.026 [−0.505, 0.560]，整体形状 p=.636。track support 49 对/14 人的形状 p=.532。五点同步 95% speaker-bootstrap bands 与每点估计在 [time_resolved_did_results.csv](time_resolved_did_results.csv)；五点绝不能当五次独立复现。**No stable additional time-localized reconstruction effect established.** IH 的不确定性不等于不存在重建。
+严格 IH 五点平均 +0.512 [−0.090, 1.143]（18 对/9 人），中点 +0.348 [−0.262, 0.921]；晚段减早段 −0.026 [−0.505, 0.560]，整体形状 p=.636。track support 49 对/14 人的形状 p=.532。预定 ≥4 对/speaker 敏感性：EH strict 26 对/4 人五点平均 +0.646 [0.395, 0.898]、晚减早 +0.039 [−0.307, 0.326]；IH strict 无满足门槛的 speaker，无法估计。IH track 的 ≥4 对子集为 26 对/5 人，平均 +1.469 [0.331, 3.111]，支持对选择明显敏感。五点同步 95% speaker-bootstrap bands 与每点估计在 [time_resolved_did_results.csv](time_resolved_did_results.csv)；五点绝不能当五次独立复现。**No stable additional time-localized reconstruction effect established.** IH 的不确定性不等于不存在重建。
 
 ## 8. Experiment C: Speaker-specific preservation
 
