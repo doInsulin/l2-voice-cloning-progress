@@ -1,0 +1,37 @@
+{
+  "run_id": "DVIV-20261030-01",
+  "source_sha256": {
+    "research\\27_dynamic_vowel_analysis\\dynamic_vowel_tokens.csv": "18f00661b92954385d23b33a849d8d8be989213ef4b5ec9cd8b4fa2e14307ba9",
+    "research\\27_dynamic_vowel_analysis\\natural_dynamic_vowels.csv": "9f2e2ef96c45cd08a4cf6d8e0692a192177732bd7e7579d98dfee1af3ff23519",
+    "research\\33_dynamic_vowel_trajectory_20261022\\reconstruction_pair_results.csv": "4e52f421f834082d2802d76b1284c7a167bb4e60f1722238526935b725dd25e6",
+    "research\\final_confirmatory_experiment\\natural_vowel_axes.json": "7ff8fb47fe7e053af17984bf95a69ce826a77093d4ea217470a4309cddd2db07"
+  },
+  "artifacts_sha256": {
+    "analysis_summary.json": "9cb661f027aa95603ab50dd28db5c5e29f98bc98a40510dda8ff9fd3bc541ecb",
+    "classification_predictions.csv": "e6b28496ebec9f9ba186c898a6c09970dc98070b0c1e0f242159704c1e672c06",
+    "classification_results.csv": "d3df873702b6024c1818a1a613242daeb4fca15f2f081a48573631ec64581111",
+    "decision_gate.md": "cd54e914cb1fa2de27d67b37809c38d533595562419520f03438176bd9e11ac9",
+    "dimension_matched_negative_control.csv": "ed3fe0e22d8a54f8a1a89718e5f72bf7bd0a43a07e8ac5b5fefc1a51f642d1cd",
+    "experiment_protocol.md": "9ac3af12803585fd82305b212b00e5caaeb43822c3e18ab28db85d2bd931c17c",
+    "figures/a_classification.png": "700e83de14d510a24566d118122e0b06e2b933dae694cd44aeb505187729905e",
+    "figures/a_midpoint_dynamic.png": "a51bc30c39db32926e8a5464d96e63cd7941895290e79ebbffaaca53c71107fe",
+    "figures/b_eh_decomposition.png": "a772dd60bfe33bfc65fec59eec720065c5f7970ca891e31c52437f05ba34b1f1",
+    "figures/b_eh_to_ae.png": "7e9fc4483244d75bc1ab2562f0d30dfd39f7e8fa490b0dc516baaf74bf126444",
+    "figures/b_ih_to_iy.png": "e0ff37c667587049eb62cdbfb6856635818799864572895c9efcf9e99085dee5",
+    "figures/b_speaker_heterogeneity.png": "6255303e3f3178be7d6d1d29781867b0d6c06a5a225e71f5daf36ef7b6184753",
+    "figures/c_matched_speaker.png": "0a72a79751f12efc20d960283ef7d24702cef66c9bf6e09dcf2015017245c9d5",
+    "figures/qc_attrition.png": "ed932ee682477d88de9bd9e7029d2a6af58bea844b68a5bcde329506f8a042ca",
+    "final_experiment_report.md": "b0094ad4b2d1195b9a175fe5e795996a09795b075a4d3c5db8c8092cf1d7112c",
+    "incremental_value_results.csv": "853dd4e5681967025788805a96bbc3d265ee866e5b2df9900061a426e81259a5",
+    "literature_comparison.md": "17defcc602a2b94e86e754dfbc48c75367dd6586924948cf5cae5b0553ff04a5",
+    "phase0_existing_data_audit.md": "73d4a4ec2c3afefda7cfcd59cd8915e39a8d6bc2442de2b4d1fd362a6ccbe8e5",
+    "qc_attrition_tokens.csv": "361ee8fac772e469bd8526072416474cbdaebabc9c727c5540af30389672a1a5",
+    "README.md": "04262204b4aa1bddd0ef3dd66eb714c55f97144d72beddece96bd762d2b05a19",
+    "scripts/run.py": "5dc5664154a8f933b18d78ade83b3a9b2feeac052c36e98ac4483275fb3240e3",
+    "scripts/verify.py": "f0a9577a7c1d6ff87d71410e84ad05e10a69d43e1d8c493034b5e90f429a97dc",
+    "sensitivity_results.csv": "dc758b111a978710731202b1b134f0708247b781f65f5d6d8b647096b1b0b21b",
+    "speaker_specific_preservation.csv": "8859a87e030293793d5f12339e7940a849d33b2b72b9520c35af46e9357f6356",
+    "time_resolved_did_results.csv": "4a4b8997cad4f34028d1da97e8d8e44525af7bafa58de38c30224bc7f5c16f81"
+  },
+  "artifact_count": 25
+}
