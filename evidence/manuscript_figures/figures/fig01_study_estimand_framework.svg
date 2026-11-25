@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <style>
+      .title{font:700 40px Arial,sans-serif;fill:#17324d}.sub{font:400 20px Arial,sans-serif;fill:#536779}
+      .head{font:700 24px Arial,sans-serif;fill:#fff}.boxhead{font:700 23px Arial,sans-serif;fill:#17324d}
+      .body{font:400 18px Arial,sans-serif;fill:#324b5f}.small{font:400 16px Arial,sans-serif;fill:#536779}
+      .rq{font:700 20px Arial,sans-serif;fill:#17324d}.foot{font:600 19px Arial,sans-serif;fill:#fff}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L10,3 L0,6 Z" fill="#6b8092"/></marker>
+  </defs>
+  <rect width="1600" height="900" fill="#f7fafc"/>
+  <text x="800" y="62" text-anchor="middle" class="title">Overall study and estimand framework</text>
+  <text x="800" y="95" text-anchor="middle" class="sub">Distinct evidence streams are kept separate rather than collapsed into one performance score</text>
+
+  <rect x="70" y="132" width="400" height="55" rx="12" fill="#1f5b78"/><text x="270" y="168" text-anchor="middle" class="head">Frozen data partitions</text>
+  <rect x="70" y="210" width="400" height="130" rx="14" fill="#e8f2f7" stroke="#8cb6c9" stroke-width="2"/>
+  <text x="95" y="246" class="boxhead">A · Evaluation targets</text><text x="95" y="278" class="body">160 planned targets; same texts across</text><text x="95" y="304" class="body">the three principal preservation systems</text>
+  <rect x="70" y="365" width="400" height="130" rx="14" fill="#e8f2f7" stroke="#8cb6c9" stroke-width="2"/>
+  <text x="95" y="401" class="boxhead">B · Reference / enrollment</text><text x="95" y="433" class="body">Zero-shot conditioning and controlled</text><text x="95" y="459" class="body">reference interventions</text>
+  <rect x="70" y="520" width="400" height="130" rx="14" fill="#e8f2f7" stroke="#8cb6c9" stroke-width="2"/>
+  <text x="95" y="556" class="boxhead">C · Held-out originals</text><text x="95" y="588" class="body">1,280 utterances; same-speaker</text><text x="95" y="614" class="body">natural-variation scales</text>
+
+  <rect x="600" y="132" width="400" height="55" rx="12" fill="#287a71"/><text x="800" y="168" text-anchor="middle" class="head">Tested systems and roles</text>
+  <rect x="600" y="210" width="400" height="130" rx="14" fill="#e9f5f2" stroke="#8bc4bb" stroke-width="2"/>
+  <text x="625" y="246" class="boxhead">F5-TTS</text><text x="625" y="278" class="body">Preservation · reconstruction</text><text x="625" y="304" class="body">F0, timing, and vowel interventions</text>
+  <rect x="600" y="365" width="400" height="130" rx="14" fill="#e9f5f2" stroke="#8bc4bb" stroke-width="2"/>
+  <text x="625" y="401" class="boxhead">CosyVoice 2 · OpenVoice V2</text><text x="625" y="433" class="body">Natural-preservation comparison on</text><text x="625" y="459" class="body">shared evaluation targets</text>
+  <rect x="600" y="520" width="400" height="130" rx="14" fill="#e9f5f2" stroke="#8bc4bb" stroke-width="2"/>
+  <text x="625" y="556" class="boxhead">Qwen3-TTS</text><text x="625" y="588" class="body">Supporting cross-system replications</text><text x="625" y="614" class="body">under frozen interfaces and designs</text>
+
+  <rect x="1130" y="132" width="400" height="55" rx="12" fill="#b7652d"/><text x="1330" y="168" text-anchor="middle" class="head">Research questions and estimands</text>
+  <rect x="1130" y="210" width="400" height="130" rx="14" fill="#fff2e8" stroke="#e1ad87" stroke-width="2"/>
+  <text x="1155" y="246" class="rq">RQ1 · Preservation</text><text x="1155" y="278" class="body">Natural Distortion Score (NDS)</text><text x="1155" y="304" class="small">Metric-specific, speaker-normalized profiles</text>
+  <rect x="1130" y="365" width="400" height="130" rx="14" fill="#fff2e8" stroke="#e1ad87" stroke-width="2"/>
+  <text x="1155" y="401" class="rq">RQ2 · Reconstruction</text><text x="1155" y="433" class="body">Matched change contrast</text><text x="1155" y="459" class="small">Canonical-direction acoustic change</text>
+  <rect x="1130" y="520" width="400" height="130" rx="14" fill="#fff2e8" stroke="#e1ad87" stroke-width="2"/>
+  <text x="1155" y="556" class="rq">RQ3 · Controllability</text><text x="1155" y="588" class="body">RCI and trajectory slope</text><text x="1155" y="614" class="small">Magnitude · consistency · generalizability</text>
+
+  <line x1="485" y1="275" x2="585" y2="275" stroke="#6b8092" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="1015" y1="275" x2="1115" y2="275" stroke="#6b8092" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="485" y1="430" x2="585" y2="430" stroke="#6b8092" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="1015" y1="430" x2="1115" y2="430" stroke="#6b8092" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="485" y1="585" x2="585" y2="585" stroke="#6b8092" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="1015" y1="585" x2="1115" y2="585" stroke="#6b8092" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <rect x="70" y="720" width="1460" height="105" rx="18" fill="#17324d"/>
+  <text x="800" y="763" text-anchor="middle" class="foot">Speaker-equal acoustic / embedding output inference</text>
+  <text x="800" y="798" text-anchor="middle" class="foot">No perceptual claim · no pure architecture effect · no internal-mechanism claim</text>
+</svg>

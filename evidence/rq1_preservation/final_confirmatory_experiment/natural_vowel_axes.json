@@ -1,0 +1,936 @@
+{
+  "status": "HELD_OUT_C_VOWEL_AXES_FROZEN",
+  "axes": {
+    "ASI": {
+      "IH_TO_IY": {
+        "deviation_endpoint": "IY",
+        "canonical_endpoint": "IH",
+        "deviation_n": 106,
+        "canonical_n": 164,
+        "deviation_words": 66,
+        "canonical_words": 88,
+        "deviation_utterances": 63,
+        "canonical_utterances": 66,
+        "mu_deviation": [
+          5.786241432053792,
+          7.642141279826021
+        ],
+        "mu_canonical": [
+          6.0281148810855365,
+          7.4739034608294155
+        ],
+        "axis_vector": [
+          0.24187344903174424,
+          -0.16823781899660517
+        ],
+        "axis_length": 0.2946298170369833,
+        "projection_definition": "dot(log(F1,F2)-mu_deviation,axis)/axis_length^2",
+        "bootstrap_same_hemisphere_fraction": 1.0,
+        "bootstrap_valid": 2000,
+        "leave_one_word_out_same_hemisphere": true,
+        "established": true
+      },
+      "EH_TO_AE": {
+        "deviation_endpoint": "AE",
+        "canonical_endpoint": "EH",
+        "deviation_n": 63,
+        "canonical_n": 64,
+        "deviation_words": 37,
+        "canonical_words": 54,
+        "deviation_utterances": 43,
+        "canonical_utterances": 46,
+        "mu_deviation": [
+          6.492430528915552,
+          7.369184698495549
+        ],
+        "mu_canonical": [
+          6.205150789908206,
+          7.428079843841686
+        ],
+        "axis_vector": [
+          -0.2872797390073458,
+          0.0588951453461366
+        ],
+        "axis_length": 0.29325464461704825,
+        "projection_definition": "dot(log(F1,F2)-mu_deviation,axis)/axis_length^2",
+        "bootstrap_same_hemisphere_fraction": 1.0,
+        "bootstrap_valid": 2000,
+        "leave_one_word_out_same_hemisphere": true,
+        "established": true
+      }
+    },
+    "BWC": {
+      "IH_TO_IY": {
+        "deviation_endpoint": "IY",
+        "canonical_endpoint": "IH",
+        "deviation_n": 98,
+        "canonical_n": 143,
+        "deviation_words": 67,
+        "canonical_words": 81,
+        "deviation_utterances": 57,
+        "canonical_utterances": 64,
+        "mu_deviation": [
+          5.885731246276683,
+          7.673176795100281
+        ],
+        "mu_canonical": [
+          6.007337096640392,
+          7.630973890237332
+        ],
+        "axis_vector": [
+          0.12160585036370897,
+          -0.04220290486294953
+        ],
+        "axis_length": 0.1287208919389232,
+        "projection_definition": "dot(log(F1,F2)-mu_deviation,axis)/axis_length^2",
+        "bootstrap_same_hemisphere_fraction": 1.0,
+        "bootstrap_valid": 2000,
+        "leave_one_word_out_same_hemisphere": true,
+        "established": true
+      },
+      "EH_TO_AE": {
+        "deviation_endpoint": "AE",
+        "canonical_endpoint": "EH",
+        "deviation_n": 63,
+        "canonical_n": 43,
+        "deviation_words": 36,
+        "canonical_words": 32,
+        "deviation_utterances": 45,
+        "canonical_utterances": 35,
+        "mu_deviation": [
+          6.5822681434631924,
+          7.321006914523819
+        ],
+        "mu_canonical": [
+          6.416157885612858,
+          7.340116189135579
+        ],
+        "axis_vector": [
+          -0.16611025785033462,
+          0.019109274611760263
+        ],
+        "axis_length": 0.1672058077319455,
+        "projection_definition": "dot(log(F1,F2)-mu_deviation,axis)/axis_length^2",
+        "bootstrap_same_hemisphere_fraction": 1.0,
+        "bootstrap_valid": 2000,
+        "leave_one_word_out_same_hemisphere": true,
+        "established": true
+      }
+    },
+    "EBVS": {
+      "IH_TO_IY": {
+        "deviation_endpoint": "IY",
+        "canonical_endpoint": "IH",
+        "deviation_n": 89,
+        "canonical_n": 118,
+        "deviation_words": 65,
+        "canonical_words": 77,
+        "deviation_utterances": 54,
+        "canonical_utterances": 55,
+        "mu_deviation": [
+          5.827215330683422,
+          7.629530814132871
+        ],
+        "mu_canonical": [
+          5.868717453705848,
+          7.5911625286160325
+        ],
+        "axis_vector": [
+          0.041502123022426396,
+          -0.038368285516838796
+        ],
+        "axis_length": 0.056520364019265454,
+        "projection_definition": "dot(log(F1,F2)-mu_deviation,axis)/axis_length^2",
+        "bootstrap_same_hemisphere_fraction": 0.992,
+        "bootstrap_valid": 2000,
+        "leave_one_word_out_same_hemisphere": true,
+        "established": true
+      },
+      "EH_TO_AE": {
+        "deviation_endpoint": "AE",
+        "canonical_endpoint": "EH",
+        "deviation_n": 25,
+        "canonical_n": 60,
+        "deviation_words": 19,
+        "canonical_words": 47,
+        "deviation_utterances": 21,
+        "canonical_utterances": 41,
+        "mu_deviation": [
+          6.4257137161903195,
+          7.2697812781588675
+        ],
+        "mu_canonical": [
+          6.221458809639174,
+          7.437520107934808
+        ],
+        "axis_vector": [
+          -0.20425490655114587,
+          0.16773882977594035
+        ],
+        "axis_length": 0.2643035789860198,
+        "projection_definition": "dot(log(F1,F2)-mu_deviation,axis)/axis_length^2",
+        "bootstrap_same_hemisphere_fraction": null,
+        "leave_one_word_out_same_hemisphere": null,
+        "established": false
+      }
+    },
+    "ERMS": {
+      "IH_TO_IY": {
+        "deviation_endpoint": "IY",
+        "canonical_endpoint": "IH",
+        "deviation_n": 107,
+        "canonical_n": 91,
+        "deviation_words": 71,
+        "canonical_words": 64,
+        "deviation_utterances": 64,
+        "canonical_utterances": 49,
+        "mu_deviation": [
+          5.688214193633588,
+          7.607936290718362
+        ],
+        "mu_canonical": [
+          5.728542226616678,
+          7.526317909137454
+        ],
+        "axis_vector": [
+          0.04032803298309062,
+          -0.08161838158090795
+        ],
+        "axis_length": 0.09103796162135848,
+        "projection_definition": "dot(log(F1,F2)-mu_deviation,axis)/axis_length^2",
+        "bootstrap_same_hemisphere_fraction": 0.9995,
+        "bootstrap_valid": 2000,
+        "leave_one_word_out_same_hemisphere": true,
+        "established": true
+      },
+      "EH_TO_AE": {
+        "deviation_endpoint": "AE",
+        "canonical_endpoint": "EH",
+        "deviation_n": 32,
+        "canonical_n": 68,
+        "deviation_words": 24,
+        "canonical_words": 52,
+        "deviation_utterances": 25,
+        "canonical_utterances": 47,
+        "mu_deviation": [
+          6.347851157030609,
+          7.336499033858437
+        ],
+        "mu_canonical": [
+          6.104153624763361,
+          7.4143684409722965
+        ],
+        "axis_vector": [
+          -0.2436975322672481,
+          0.0778694071138597
+        ],
+        "axis_length": 0.25583614247680186,
+        "projection_definition": "dot(log(F1,F2)-mu_deviation,axis)/axis_length^2",
+        "bootstrap_same_hemisphere_fraction": 1.0,
+        "bootstrap_valid": 2000,
+        "leave_one_word_out_same_hemisphere": true,
+        "established": true
+      }
+    },
+    "LXC": {
+      "IH_TO_IY": {
+        "deviation_endpoint": "IY",
+        "canonical_endpoint": "IH",
+        "deviation_n": 98,
+        "canonical_n": 128,
+        "deviation_words": 60,
+        "canonical_words": 78,
+        "deviation_utterances": 58,
+        "canonical_utterances": 58,
+        "mu_deviation": [
+          6.035348017505983,
+          7.8940687132954555
+        ],
+        "mu_canonical": [
+          5.988258007445655,
+          7.874259811428995
+        ],
+        "axis_vector": [
+          -0.047090010060328424,
+          -0.019808901866460893
+        ],
+        "axis_length": 0.051086804956240024,
+        "projection_definition": "dot(log(F1,F2)-mu_deviation,axis)/axis_length^2",
+        "bootstrap_same_hemisphere_fraction": 0.9815,
+        "bootstrap_valid": 2000,
+        "leave_one_word_out_same_hemisphere": true,
+        "established": true
+      },
+      "EH_TO_AE": {
+        "deviation_endpoint": "AE",
+        "canonical_endpoint": "EH",
+        "deviation_n": 73,
+        "canonical_n": 44,
+        "deviation_words": 30,
+        "canonical_words": 39,
+        "deviation_utterances": 47,
+        "canonical_utterances": 32,
+        "mu_deviation": [
+          6.734463517246462,
+          7.673100449332742
+        ],
+        "mu_canonical": [
+          6.490005226935375,
+          7.723765141135278
+        ],
+        "axis_vector": [
+          -0.244458290311087,
+          0.05066469180253552
+        ],
+        "axis_length": 0.24965329298301997,
+        "projection_definition": "dot(log(F1,F2)-mu_deviation,axis)/axis_length^2",
+        "bootstrap_same_hemisphere_fraction": 1.0,
+        "bootstrap_valid": 2000,
+        "leave_one_word_out_same_hemisphere": true,
+        "established": true
+      }
+    },
+    "MBMPS": {
+      "IH_TO_IY": {
+        "deviation_endpoint": "IY",
+        "canonical_endpoint": "IH",
+        "deviation_n": 124,
+        "canonical_n": 120,
+        "deviation_words": 76,
+        "canonical_words": 75,
+        "deviation_utterances": 62,
+        "canonical_utterances": 57,
+        "mu_deviation": [
+          5.937534505523713,
+          7.7430618763654335
+        ],
+        "mu_canonical": [
+          6.101469098597108,
+          7.669283426642451
+        ],
+        "axis_vector": [
+          0.16393459307339509,
+          -0.07377844972298231
+        ],
+        "axis_length": 0.17977155072387363,
+        "projection_definition": "dot(log(F1,F2)-mu_deviation,axis)/axis_length^2",
+        "bootstrap_same_hemisphere_fraction": 1.0,
+        "bootstrap_valid": 2000,
+        "leave_one_word_out_same_hemisphere": true,
+        "established": true
+      },
+      "EH_TO_AE": {
+        "deviation_endpoint": "AE",
+        "canonical_endpoint": "EH",
+        "deviation_n": 61,
+        "canonical_n": 69,
+        "deviation_words": 33,
+        "canonical_words": 52,
+        "deviation_utterances": 43,
+        "canonical_utterances": 46,
+        "mu_deviation": [
+          6.818592095797685,
+          7.476866367815438
+        ],
+        "mu_canonical": [
+          6.4497900630960165,
+          7.640820833421323
+        ],
+        "axis_vector": [
+          -0.36880203270166856,
+          0.1639544656058849
+        ],
+        "axis_length": 0.4036037736654526,
+        "projection_definition": "dot(log(F1,F2)-mu_deviation,axis)/axis_length^2",
+        "bootstrap_same_hemisphere_fraction": 1.0,
+        "bootstrap_valid": 2000,
+        "leave_one_word_out_same_hemisphere": true,
+        "established": true
+      }
+    },
+    "NCC": {
+      "IH_TO_IY": {
+        "deviation_endpoint": "IY",
+        "canonical_endpoint": "IH",
+        "deviation_n": 105,
+        "canonical_n": 130,
+        "deviation_words": 63,
+        "canonical_words": 79,
+        "deviation_utterances": 60,
+        "canonical_utterances": 58,
+        "mu_deviation": [
+          5.926748447904586,
+          7.8025246014862955
+        ],
+        "mu_canonical": [
+          5.9948613801663155,
+          7.718936304163648
+        ],
+        "axis_vector": [
+          0.06811293226172932,
+          -0.08358829732264716
+        ],
+        "axis_length": 0.10782566944188285,
+        "projection_definition": "dot(log(F1,F2)-mu_deviation,axis)/axis_length^2",
+        "bootstrap_same_hemisphere_fraction": 1.0,
+        "bootstrap_valid": 2000,
+        "leave_one_word_out_same_hemisphere": true,
+        "established": true
+      },
+      "EH_TO_AE": {
+        "deviation_endpoint": "AE",
+        "canonical_endpoint": "EH",
+        "deviation_n": 74,
+        "canonical_n": 60,
+        "deviation_words": 37,
+        "canonical_words": 49,
+        "deviation_utterances": 50,
+        "canonical_utterances": 42,
+        "mu_deviation": [
+          6.405893415378969,
+          7.604475129962035
+        ],
+        "mu_canonical": [
+          6.319351391309313,
+          7.582021141706559
+        ],
+        "axis_vector": [
+          -0.08654202406965616,
+          -0.022453988255476176
+        ],
+        "axis_length": 0.08940751377065581,
+        "projection_definition": "dot(log(F1,F2)-mu_deviation,axis)/axis_length^2",
+        "bootstrap_same_hemisphere_fraction": 0.9575,
+        "bootstrap_valid": 2000,
+        "leave_one_word_out_same_hemisphere": true,
+        "established": true
+      }
+    },
+    "NJS": {
+      "IH_TO_IY": {
+        "deviation_endpoint": "IY",
+        "canonical_endpoint": "IH",
+        "deviation_n": 96,
+        "canonical_n": 131,
+        "deviation_words": 63,
+        "canonical_words": 79,
+        "deviation_utterances": 58,
+        "canonical_utterances": 61,
+        "mu_deviation": [
+          5.897000393363189,
+          7.910104398987895
+        ],
+        "mu_canonical": [
+          6.020684324279904,
+          7.806516002537839
+        ],
+        "axis_vector": [
+          0.12368393091671503,
+          -0.10358839645005613
+        ],
+        "axis_length": 0.1613327947012161,
+        "projection_definition": "dot(log(F1,F2)-mu_deviation,axis)/axis_length^2",
+        "bootstrap_same_hemisphere_fraction": 1.0,
+        "bootstrap_valid": 2000,
+        "leave_one_word_out_same_hemisphere": true,
+        "established": true
+      },
+      "EH_TO_AE": {
+        "deviation_endpoint": "AE",
+        "canonical_endpoint": "EH",
+        "deviation_n": 65,
+        "canonical_n": 68,
+        "deviation_words": 31,
+        "canonical_words": 53,
+        "deviation_utterances": 46,
+        "canonical_utterances": 48,
+        "mu_deviation": [
+          6.686298045699142,
+          7.661300214973544
+        ],
+        "mu_canonical": [
+          6.389026292347744,
+          7.689723935706008
+        ],
+        "axis_vector": [
+          -0.29727175335139844,
+          0.02842372073246402
+        ],
+        "axis_length": 0.2986275326236544,
+        "projection_definition": "dot(log(F1,F2)-mu_deviation,axis)/axis_length^2",
+        "bootstrap_same_hemisphere_fraction": 1.0,
+        "bootstrap_valid": 2000,
+        "leave_one_word_out_same_hemisphere": true,
+        "established": true
+      }
+    },
+    "PNV": {
+      "IH_TO_IY": {
+        "deviation_endpoint": "IY",
+        "canonical_endpoint": "IH",
+        "deviation_n": 94,
+        "canonical_n": 142,
+        "deviation_words": 64,
+        "canonical_words": 81,
+        "deviation_utterances": 55,
+        "canonical_utterances": 66,
+        "mu_deviation": [
+          5.933070774990069,
+          7.853471358825883
+        ],
+        "mu_canonical": [
+          6.0397660554849875,
+          7.757445887331548
+        ],
+        "axis_vector": [
+          0.10669528049491817,
+          -0.09602547149433427
+        ],
+        "axis_length": 0.14354363119135055,
+        "projection_definition": "dot(log(F1,F2)-mu_deviation,axis)/axis_length^2",
+        "bootstrap_same_hemisphere_fraction": 1.0,
+        "bootstrap_valid": 2000,
+        "leave_one_word_out_same_hemisphere": true,
+        "established": true
+      },
+      "EH_TO_AE": {
+        "deviation_endpoint": "AE",
+        "canonical_endpoint": "EH",
+        "deviation_n": 40,
+        "canonical_n": 49,
+        "deviation_words": 25,
+        "canonical_words": 40,
+        "deviation_utterances": 31,
+        "canonical_utterances": 35,
+        "mu_deviation": [
+          6.636502447820755,
+          7.563359938562283
+        ],
+        "mu_canonical": [
+          6.467632663001094,
+          7.667744685575934
+        ],
+        "axis_vector": [
+          -0.16886978481966075,
+          0.10438474701365053
+        ],
+        "axis_length": 0.19852752865570647,
+        "projection_definition": "dot(log(F1,F2)-mu_deviation,axis)/axis_length^2",
+        "bootstrap_same_hemisphere_fraction": 1.0,
+        "bootstrap_valid": 2000,
+        "leave_one_word_out_same_hemisphere": true,
+        "established": true
+      }
+    },
+    "SKA": {
+      "IH_TO_IY": {
+        "deviation_endpoint": "IY",
+        "canonical_endpoint": "IH",
+        "deviation_n": 106,
+        "canonical_n": 149,
+        "deviation_words": 60,
+        "canonical_words": 80,
+        "deviation_utterances": 64,
+        "canonical_utterances": 67,
+        "mu_deviation": [
+          5.948369935739948,
+          7.738245147919233
+        ],
+        "mu_canonical": [
+          6.155682185837083,
+          7.6224413091124825
+        ],
+        "axis_vector": [
+          0.20731225009713494,
+          -0.11580383880675083
+        ],
+        "axis_length": 0.237463466922213,
+        "projection_definition": "dot(log(F1,F2)-mu_deviation,axis)/axis_length^2",
+        "bootstrap_same_hemisphere_fraction": 1.0,
+        "bootstrap_valid": 2000,
+        "leave_one_word_out_same_hemisphere": true,
+        "established": true
+      },
+      "EH_TO_AE": {
+        "deviation_endpoint": "AE",
+        "canonical_endpoint": "EH",
+        "deviation_n": 61,
+        "canonical_n": 71,
+        "deviation_words": 33,
+        "canonical_words": 53,
+        "deviation_utterances": 42,
+        "canonical_utterances": 48,
+        "mu_deviation": [
+          6.660464291949834,
+          7.546289530106373
+        ],
+        "mu_canonical": [
+          6.250062963223144,
+          7.600042510527108
+        ],
+        "axis_vector": [
+          -0.41040132872669055,
+          0.053752980420735064
+        ],
+        "axis_length": 0.41390655168134877,
+        "projection_definition": "dot(log(F1,F2)-mu_deviation,axis)/axis_length^2",
+        "bootstrap_same_hemisphere_fraction": 1.0,
+        "bootstrap_valid": 2000,
+        "leave_one_word_out_same_hemisphere": true,
+        "established": true
+      }
+    },
+    "SVBI": {
+      "IH_TO_IY": {
+        "deviation_endpoint": "IY",
+        "canonical_endpoint": "IH",
+        "deviation_n": 106,
+        "canonical_n": 156,
+        "deviation_words": 62,
+        "canonical_words": 91,
+        "deviation_utterances": 61,
+        "canonical_utterances": 66,
+        "mu_deviation": [
+          5.826628067302455,
+          7.639141646739113
+        ],
+        "mu_canonical": [
+          5.9297059370249245,
+          7.496555014725188
+        ],
+        "axis_vector": [
+          0.1030778697224699,
+          -0.1425866320139253
+        ],
+        "axis_length": 0.17594315802439442,
+        "projection_definition": "dot(log(F1,F2)-mu_deviation,axis)/axis_length^2",
+        "bootstrap_same_hemisphere_fraction": 1.0,
+        "bootstrap_valid": 2000,
+        "leave_one_word_out_same_hemisphere": true,
+        "established": true
+      },
+      "EH_TO_AE": {
+        "deviation_endpoint": "AE",
+        "canonical_endpoint": "EH",
+        "deviation_n": 50,
+        "canonical_n": 65,
+        "deviation_words": 30,
+        "canonical_words": 55,
+        "deviation_utterances": 35,
+        "canonical_utterances": 45,
+        "mu_deviation": [
+          6.3566975909195085,
+          7.386524411222846
+        ],
+        "mu_canonical": [
+          6.126664193134767,
+          7.406506511550056
+        ],
+        "axis_vector": [
+          -0.23003339778474174,
+          0.01998210032721026
+        ],
+        "axis_length": 0.23089965012940128,
+        "projection_definition": "dot(log(F1,F2)-mu_deviation,axis)/axis_length^2",
+        "bootstrap_same_hemisphere_fraction": 1.0,
+        "bootstrap_valid": 2000,
+        "leave_one_word_out_same_hemisphere": true,
+        "established": true
+      }
+    },
+    "TLV": {
+      "IH_TO_IY": {
+        "deviation_endpoint": "IY",
+        "canonical_endpoint": "IH",
+        "deviation_n": 101,
+        "canonical_n": 132,
+        "deviation_words": 65,
+        "canonical_words": 70,
+        "deviation_utterances": 59,
+        "canonical_utterances": 63,
+        "mu_deviation": [
+          5.898146058205708,
+          7.672170701017307
+        ],
+        "mu_canonical": [
+          5.857067027078068,
+          7.597049082422968
+        ],
+        "axis_vector": [
+          -0.041079031127640775,
+          -0.07512161859433863
+        ],
+        "axis_length": 0.08561976628453831,
+        "projection_definition": "dot(log(F1,F2)-mu_deviation,axis)/axis_length^2",
+        "bootstrap_same_hemisphere_fraction": 1.0,
+        "bootstrap_valid": 2000,
+        "leave_one_word_out_same_hemisphere": true,
+        "established": true
+      },
+      "EH_TO_AE": {
+        "deviation_endpoint": "AE",
+        "canonical_endpoint": "EH",
+        "deviation_n": 59,
+        "canonical_n": 64,
+        "deviation_words": 29,
+        "canonical_words": 55,
+        "deviation_utterances": 44,
+        "canonical_utterances": 45,
+        "mu_deviation": [
+          6.527783482514203,
+          7.507324020396747
+        ],
+        "mu_canonical": [
+          6.220484647632558,
+          7.448898991212258
+        ],
+        "axis_vector": [
+          -0.307298834881645,
+          -0.05842502918448922
+        ],
+        "axis_length": 0.31280354530411725,
+        "projection_definition": "dot(log(F1,F2)-mu_deviation,axis)/axis_length^2",
+        "bootstrap_same_hemisphere_fraction": 1.0,
+        "bootstrap_valid": 2000,
+        "leave_one_word_out_same_hemisphere": true,
+        "established": true
+      }
+    },
+    "TXHC": {
+      "IH_TO_IY": {
+        "deviation_endpoint": "IY",
+        "canonical_endpoint": "IH",
+        "deviation_n": 97,
+        "canonical_n": 130,
+        "deviation_words": 61,
+        "canonical_words": 83,
+        "deviation_utterances": 57,
+        "canonical_utterances": 60,
+        "mu_deviation": [
+          5.8117167809020405,
+          7.545406108058065
+        ],
+        "mu_canonical": [
+          5.970696472300269,
+          7.488464033366813
+        ],
+        "axis_vector": [
+          0.15897969139822887,
+          -0.056942074691252564
+        ],
+        "axis_length": 0.168869601015755,
+        "projection_definition": "dot(log(F1,F2)-mu_deviation,axis)/axis_length^2",
+        "bootstrap_same_hemisphere_fraction": 1.0,
+        "bootstrap_valid": 2000,
+        "leave_one_word_out_same_hemisphere": true,
+        "established": true
+      },
+      "EH_TO_AE": {
+        "deviation_endpoint": "AE",
+        "canonical_endpoint": "EH",
+        "deviation_n": 67,
+        "canonical_n": 52,
+        "deviation_words": 33,
+        "canonical_words": 40,
+        "deviation_utterances": 49,
+        "canonical_utterances": 38,
+        "mu_deviation": [
+          6.605040339560915,
+          7.361918874077714
+        ],
+        "mu_canonical": [
+          6.390179676608684,
+          7.3337764487462005
+        ],
+        "axis_vector": [
+          -0.2148606629522316,
+          -0.0281424253315139
+        ],
+        "axis_length": 0.21669587118312225,
+        "projection_definition": "dot(log(F1,F2)-mu_deviation,axis)/axis_length^2",
+        "bootstrap_same_hemisphere_fraction": 1.0,
+        "bootstrap_valid": 2000,
+        "leave_one_word_out_same_hemisphere": true,
+        "established": true
+      }
+    },
+    "YBAA": {
+      "IH_TO_IY": {
+        "deviation_endpoint": "IY",
+        "canonical_endpoint": "IH",
+        "deviation_n": 116,
+        "canonical_n": 152,
+        "deviation_words": 66,
+        "canonical_words": 85,
+        "deviation_utterances": 66,
+        "canonical_utterances": 67,
+        "mu_deviation": [
+          5.897539904529237,
+          7.676486152456495
+        ],
+        "mu_canonical": [
+          6.00721710498369,
+          7.513672570726213
+        ],
+        "axis_vector": [
+          0.10967720045445262,
+          -0.1628135817302825
+        ],
+        "axis_length": 0.196309324015365,
+        "projection_definition": "dot(log(F1,F2)-mu_deviation,axis)/axis_length^2",
+        "bootstrap_same_hemisphere_fraction": 1.0,
+        "bootstrap_valid": 2000,
+        "leave_one_word_out_same_hemisphere": true,
+        "established": true
+      },
+      "EH_TO_AE": {
+        "deviation_endpoint": "AE",
+        "canonical_endpoint": "EH",
+        "deviation_n": 53,
+        "canonical_n": 74,
+        "deviation_words": 26,
+        "canonical_words": 59,
+        "deviation_utterances": 40,
+        "canonical_utterances": 49,
+        "mu_deviation": [
+          6.384586107684781,
+          7.4077206443798325
+        ],
+        "mu_canonical": [
+          6.124619042881478,
+          7.481218261069989
+        ],
+        "axis_vector": [
+          -0.2599670648033028,
+          0.07349761669015642
+        ],
+        "axis_length": 0.2701569440928324,
+        "projection_definition": "dot(log(F1,F2)-mu_deviation,axis)/axis_length^2",
+        "bootstrap_same_hemisphere_fraction": 1.0,
+        "bootstrap_valid": 2000,
+        "leave_one_word_out_same_hemisphere": true,
+        "established": true
+      }
+    },
+    "YDCK": {
+      "IH_TO_IY": {
+        "deviation_endpoint": "IY",
+        "canonical_endpoint": "IH",
+        "deviation_n": 100,
+        "canonical_n": 139,
+        "deviation_words": 65,
+        "canonical_words": 86,
+        "deviation_utterances": 60,
+        "canonical_utterances": 71,
+        "mu_deviation": [
+          6.011111613098708,
+          7.809288068061137
+        ],
+        "mu_canonical": [
+          6.099594376692778,
+          7.666575241948831
+        ],
+        "axis_vector": [
+          0.0884827635940697,
+          -0.14271282611230607
+        ],
+        "axis_length": 0.16791709320437076,
+        "projection_definition": "dot(log(F1,F2)-mu_deviation,axis)/axis_length^2",
+        "bootstrap_same_hemisphere_fraction": 1.0,
+        "bootstrap_valid": 2000,
+        "leave_one_word_out_same_hemisphere": true,
+        "established": true
+      },
+      "EH_TO_AE": {
+        "deviation_endpoint": "AE",
+        "canonical_endpoint": "EH",
+        "deviation_n": 59,
+        "canonical_n": 51,
+        "deviation_words": 31,
+        "canonical_words": 38,
+        "deviation_utterances": 42,
+        "canonical_utterances": 36,
+        "mu_deviation": [
+          6.605768043723011,
+          7.4359267214548375
+        ],
+        "mu_canonical": [
+          6.449865012227184,
+          7.488406607697653
+        ],
+        "axis_vector": [
+          -0.15590303149582763,
+          0.052479886242815965
+        ],
+        "axis_length": 0.16449891698624622,
+        "projection_definition": "dot(log(F1,F2)-mu_deviation,axis)/axis_length^2",
+        "bootstrap_same_hemisphere_fraction": 0.984,
+        "bootstrap_valid": 2000,
+        "leave_one_word_out_same_hemisphere": true,
+        "established": true
+      }
+    },
+    "YKWK": {
+      "IH_TO_IY": {
+        "deviation_endpoint": "IY",
+        "canonical_endpoint": "IH",
+        "deviation_n": 93,
+        "canonical_n": 150,
+        "deviation_words": 58,
+        "canonical_words": 84,
+        "deviation_utterances": 57,
+        "canonical_utterances": 68,
+        "mu_deviation": [
+          5.8432045390747955,
+          7.545826161925239
+        ],
+        "mu_canonical": [
+          5.8951964233371825,
+          7.4960806387309775
+        ],
+        "axis_vector": [
+          0.05199188426238699,
+          -0.04974552319426184
+        ],
+        "axis_length": 0.0719567446944641,
+        "projection_definition": "dot(log(F1,F2)-mu_deviation,axis)/axis_length^2",
+        "bootstrap_same_hemisphere_fraction": 0.991,
+        "bootstrap_valid": 2000,
+        "leave_one_word_out_same_hemisphere": true,
+        "established": true
+      },
+      "EH_TO_AE": {
+        "deviation_endpoint": "AE",
+        "canonical_endpoint": "EH",
+        "deviation_n": 64,
+        "canonical_n": 68,
+        "deviation_words": 32,
+        "canonical_words": 55,
+        "deviation_utterances": 45,
+        "canonical_utterances": 48,
+        "mu_deviation": [
+          6.3357227113721795,
+          7.334547887007784
+        ],
+        "mu_canonical": [
+          6.260584610335272,
+          7.3562168577131555
+        ],
+        "axis_vector": [
+          -0.07513810103690766,
+          0.021668970705371216
+        ],
+        "axis_length": 0.07820024628390104,
+        "projection_definition": "dot(log(F1,F2)-mu_deviation,axis)/axis_length^2",
+        "bootstrap_same_hemisphere_fraction": 0.995,
+        "bootstrap_valid": 2000,
+        "leave_one_word_out_same_hemisphere": true,
+        "established": true
+      }
+    }
+  },
+  "ih_iy_rule": "prior 30 tokens/10 words/20 utterances each, axis>=.01, bootstrap>=.95 and leave-word-out",
+  "eh_ae_rule": "prior 30 tokens each and axis>=.01; other diagnostics reported",
+  "source_original_only": true,
+  "vowel_tokens_sha256": "92ce7774841e16a1efaa9bfa0f15a2504e5078910ec183d3e41375ede7122d9b"
+}

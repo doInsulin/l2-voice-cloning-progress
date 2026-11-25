@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "input_review_sha256": "52aac95aaf6d8270e1fbc2fc638aaa03b908773a5211b98b02f4c76294f8b716",
+  "all_source_wav_and_textgrid_hashes_match": true,
+  "all_380_copied_wav_hashes_match": true,
+  "unchanged_midpoint_measurements_equal_frozen": 264,
+  "changed_intervals": 116,
+  "included_pairs": 95,
+  "unaffected_pairs_matching_frozen": 31,
+  "unaffected_pair_max_abs_did_difference": 0.0,
+  "unaffected_pair_max_abs_dynamic_difference": 0.0,
+  "initial_gap_unadjusted_estimates_match_midpoint": true,
+  "formant_track_unstable_units": [
+    "A0104",
+    "A0118"
+  ]
+}

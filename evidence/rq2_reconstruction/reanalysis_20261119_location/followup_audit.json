@@ -1,0 +1,20 @@
+{
+  "boundary_review_sha256": "52aac95aaf6d8270e1fbc2fc638aaa03b908773a5211b98b02f4c76294f8b716",
+  "unit_measurements_sha256": "ed225ab52802ba4f88b1bb14caba5fe6b76fd70ecc8d4e4db42cd10e25d22a14",
+  "frozen_trajectory_sha256": "30179036456f4ab606c522a81657ffcea2bec01940b9d441818b6c283d74ee6e",
+  "status": "POST_HOC_MANUAL_BOUNDARY_REANALYSIS",
+  "changed_unit_trajectories": 116,
+  "max_midpoint_difference_hz": 0.0,
+  "dynamic_pair_counts": {
+    "EH_TO_AE": {
+      "frozen_pass": 39,
+      "dynamic_strict": 30,
+      "dynamic_track": 36
+    },
+    "IH_TO_IY": {
+      "frozen_pass": 56,
+      "dynamic_strict": 16,
+      "dynamic_track": 48
+    }
+  }
+}

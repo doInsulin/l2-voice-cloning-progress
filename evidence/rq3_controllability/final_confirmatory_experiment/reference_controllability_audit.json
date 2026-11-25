@@ -1,0 +1,23 @@
+{
+  "f0_target_total": 96,
+  "timing_target_total": 72,
+  "f0_complete": 95,
+  "timing_complete": 72,
+  "paired_speakers_f0_timing": [
+    "BWC",
+    "EBVS",
+    "ERMS",
+    "LXC",
+    "MBMPS",
+    "NCC",
+    "PNV",
+    "SKA",
+    "TLV",
+    "YBAA",
+    "YDCK",
+    "YKWK"
+  ],
+  "rci_definition": "(output_expanded-output_compressed)/speaker_natural_scale divided by (reference_expanded-reference_compressed)/same_speaker_natural_scale; algebraically raw gain for same metric scale",
+  "three_point_slope": "OLS within target over compressed/original/expanded reference values; speaker-specific target slopes aggregated equally across speakers",
+  "speaker_is_generalization_unit": true
+}

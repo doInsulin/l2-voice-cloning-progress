@@ -1,0 +1,30 @@
+{
+  "status": "FROZEN_BEFORE_F5_GENERATION",
+  "rows": 99,
+  "speakers": [
+    "BWC",
+    "ERMS",
+    "LXC",
+    "MBMPS",
+    "NCC",
+    "NJS",
+    "PNV",
+    "SKA",
+    "TXHC",
+    "YBAA",
+    "YKWK"
+  ],
+  "n_targets": 3,
+  "conditions": [
+    "ORIGINAL",
+    "SHIFTED_A",
+    "SHIFTED_B"
+  ],
+  "manifest_sha256": "6f5e874d1065901726cc589e795643586cb3cffd7f2d94d479d228e05df69d84",
+  "qwen_ih_manifest_sha256": "a29cb022a57ed684f5743787e19ad71f9a83d4c9f4bea20f5f8f715f50955b83",
+  "reference_acoustic_qc_sha256": "6a457e0a4f2b003bc93e4082a1ab787177980707a85f3c2b02e38ec4e4aa1c74",
+  "reference_ecapa_qc_sha256": "095d9671b8376be1f545d8df79b294576d5715c6a97b6888ff99beac31d383b7",
+  "f5_checkpoint_sha256": "670900fd14e6c458b95da6e9ed317cdb20dbaf7a1c02ac06a05475a9d32b6a38",
+  "vocos_checkpoint_sha256": "97ec976ad1fd67a33ab2682d29c0ac7df85234fae875aefcc5fb215681a91b2a",
+  "same_seed_within_speaker_target": true
+}

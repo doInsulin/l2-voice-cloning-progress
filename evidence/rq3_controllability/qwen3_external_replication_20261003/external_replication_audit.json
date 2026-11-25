@@ -1,0 +1,74 @@
+{
+  "status": "PASS",
+  "phases": {
+    "preflight": {
+      "expected": 32,
+      "status": {
+        "SUCCESS": 32
+      }
+    },
+    "preservation": {
+      "expected": 320,
+      "status": {
+        "SUCCESS": 320
+      }
+    },
+    "f0": {
+      "expected": 576,
+      "status": {
+        "SUCCESS": 576
+      }
+    },
+    "timing": {
+      "expected": 432,
+      "status": {
+        "SUCCESS": 431,
+        "FAIL": 1
+      }
+    }
+  },
+  "checks": {
+    "preflight_manifest_sha": true,
+    "preflight_row_count": true,
+    "preflight_manifest_match": true,
+    "preflight_no_pending": true,
+    "preflight_wav_sha": true,
+    "preservation_manifest_sha": true,
+    "preservation_row_count": true,
+    "preservation_manifest_match": true,
+    "preservation_no_pending": true,
+    "preservation_wav_sha": true,
+    "preservation_asr_count": true,
+    "preservation_asr_unique": true,
+    "f0_manifest_sha": true,
+    "f0_row_count": true,
+    "f0_manifest_match": true,
+    "f0_no_pending": true,
+    "f0_wav_sha": true,
+    "f0_asr_count": true,
+    "f0_asr_unique": true,
+    "timing_manifest_sha": true,
+    "timing_row_count": true,
+    "timing_manifest_match": true,
+    "timing_no_pending": true,
+    "timing_wav_sha": true,
+    "timing_asr_count": true,
+    "timing_asr_unique": true,
+    "qwen3_preservation_icl_audio_text_mfa": true,
+    "qwen3_preservation_icl_audio_text_global_count": true,
+    "qwen3_preservation_icl_audio_text_vowel_targets": true,
+    "qwen3_preservation_speaker_vector_only_mfa": true,
+    "qwen3_preservation_speaker_vector_only_global_count": true,
+    "qwen3_preservation_speaker_vector_only_vowel_targets": true,
+    "qwen3_timing_icl_audio_text_mfa": true,
+    "qwen3_timing_icl_audio_text_global_count": true,
+    "qwen3_timing_speaker_vector_only_mfa": true,
+    "qwen3_timing_speaker_vector_only_global_count": true,
+    "preservation_summary": true,
+    "f0_target_results": true,
+    "f0_summary": true,
+    "timing_target_results": true,
+    "timing_summary": true
+  },
+  "failed_checks": []
+}

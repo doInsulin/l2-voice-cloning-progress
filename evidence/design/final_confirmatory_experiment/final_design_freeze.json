@@ -1,0 +1,42 @@
+{
+  "status": "INPUT_POOLS_FROZEN_GENERATION_NOT_STARTED",
+  "seed": 20260923,
+  "speaker_count": 16,
+  "preservation_targets": 160,
+  "f0_targets": 96,
+  "timing_plan": "A_EQUAL_TOTAL_REFERENCE_FRAMES",
+  "timing_references": 12,
+  "timing_speakers_with_4_to_6_targets": 12,
+  "timing_reference_exclusions": {
+    "ASI": "NO_TWO_VALID_NATURAL_PAUSES_OR_WAV_QC",
+    "NJS": "NO_TWO_VALID_NATURAL_PAUSES_OR_WAV_QC",
+    "SVBI": "NO_TWO_VALID_NATURAL_PAUSES_OR_WAV_QC",
+    "TXHC": "NO_TWO_VALID_NATURAL_PAUSES_OR_WAV_QC"
+  },
+  "segmental_pairs": {
+    "IH_TO_IY": 106,
+    "EH_TO_AE": 50
+  },
+  "baseline_utterances": 1280,
+  "current_pool_overlap": {},
+  "selection_fields": [
+    "speaker",
+    "utterance_id",
+    "canonical/perceived phone annotation",
+    "stress",
+    "word/phone position",
+    "word-boundary silence",
+    "WAV objective QC",
+    "text length"
+  ],
+  "selection_uses_clone_results": false,
+  "audio_generated": false,
+  "manifest_sha256": {
+    "final_speaker_manifest.csv": "90331390133a1a4d94e158dc07c01907e4e96005749d6c6b49212a37180c857c",
+    "final_reference_manifest.csv": "2bf526f44bbe9be9295edc893777923cee7086543e366cb904351f3dc4bcbf12",
+    "final_target_manifest.csv": "e645cb384e90ca06aedd0401d93b4027e30796326ef1afd172f40a5c7a8dca59",
+    "final_baseline_pool_manifest.csv": "0607b0ed375de4f9277a5a99751716a46543e5e272d50e1369c4128b2c9ae9a6"
+  },
+  "pre_generation_text_amendment": "Remove literal sp/sil/pau TextGrid silence labels from text; no selection or audio changed",
+  "pre_generation_pair_seed_amendment": "Error/control matched pair shares one SHA-256 seed"
+}

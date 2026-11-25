@@ -1,0 +1,10 @@
+﻿model,behavioral_family,n_speakers,spearman_rho_ecapa_nds_vs_behavior_nds,speaker_bootstrap_ci_low,speaker_bootstrap_ci_high,interpretation_limit
+f5_tts,segmental,16,-0.02941176470588235,-0.7305635335663513,0.4785284471218206,"output association, not internal representation evidence"
+f5_tts,rhythm,16,0.3323529411764706,-0.17596185858405297,0.768888888888889,"output association, not internal representation evidence"
+f5_tts,prosody,15,0.19999999999999998,-0.3891342785654713,0.7033268983268983,"output association, not internal representation evidence"
+cosyvoice2,segmental,16,0.18529411764705883,-0.4035829212001319,0.662193152234656,"output association, not internal representation evidence"
+cosyvoice2,rhythm,16,0.014705882352941175,-0.5066895131650231,0.5552277693730039,"output association, not internal representation evidence"
+cosyvoice2,prosody,15,0.09285714285714285,-0.4581913611250629,0.6175037257824143,"output association, not internal representation evidence"
+openvoice_v2,segmental,16,0.13529411764705881,-0.45132237001855685,0.6542602547725498,"output association, not internal representation evidence"
+openvoice_v2,rhythm,16,0.023529411764705882,-0.5899039400920613,0.5846132277094815,"output association, not internal representation evidence"
+openvoice_v2,prosody,15,-0.09999999999999999,-0.7153415233415232,0.5171233756608528,"output association, not internal representation evidence"

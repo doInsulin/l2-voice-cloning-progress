@@ -1,0 +1,15 @@
+{
+  "frozen_reproduction_exact": {
+    "natural_dynamic_scales.csv": true,
+    "dynamic_token_metrics.csv": true,
+    "dynamic_speaker_results.csv": true,
+    "dynamic_overall_results.csv": true,
+    "pointwise_delta_summary.csv": true,
+    "duration_shift_summary.csv": true,
+    "dynamic_vowel_coverage.csv": true
+  },
+  "changed_natural_dynamic_tokens": 41,
+  "new_natural_dynamic_sha256": "2d2d08357cbb39ac55c3bf4867c8bd4c02244efa70204c54ebb10d7140af014a",
+  "dynamic_token_input_unchanged": true,
+  "no_new_synthesis_or_alignment": true
+}

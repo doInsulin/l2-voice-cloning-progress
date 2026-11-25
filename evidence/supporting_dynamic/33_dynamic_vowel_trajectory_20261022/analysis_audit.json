@@ -1,0 +1,35 @@
+{
+  "status": "COMPUTED_NEEDS_INTERPRETIVE_REVIEW",
+  "step1": {
+    "common_strict_tokens": 214,
+    "common_track_tokens": 422,
+    "geometry_rows": 1667
+  },
+  "step2": {
+    "midpoint_max_abs_hz": 0.0,
+    "pair_counts": {
+      "EH_TO_AE": {
+        "frozen_pass": 39,
+        "dynamic_strict": 35,
+        "dynamic_track": 39
+      },
+      "IH_TO_IY": {
+        "frozen_pass": 56,
+        "dynamic_strict": 18,
+        "dynamic_track": 49
+      }
+    },
+    "n_segmental_tokens": 190
+  },
+  "output_sha256": {
+    "geometry_natural_scales.csv": "68dd8cc207f4829b419226c2b4b61ae5dfc08cd1374851e71466145aa711ae86",
+    "geometry_overall_results.csv": "c6dc6e9f29683e469326e930c1c79c9847f8954ebf293b71f2e8aa1cfb62c872",
+    "geometry_speaker_results.csv": "2c207c62cc13000c4226325a8d4491296d21aaffa7a338723eb44626723e299d",
+    "geometry_token_metrics.csv": "39db3d57afe0a4994c8fd465c166773fd08422033b841cb33c5ae7d078cd0df0",
+    "reconstruction_overall_results.csv": "53c06539d5e062cf39d2016e2260de5ac53b2b4fa0a81a44d4fa10c30e7190dc",
+    "reconstruction_pair_results.csv": "4e52f421f834082d2802d76b1284c7a167bb4e60f1722238526935b725dd25e6",
+    "reconstruction_speaker_results.csv": "61ac94ce6cdf372b26ef727d70783d17d9f031e093df8c8496b3fe8a7c35446a",
+    "reconstruction_token_trajectories.csv": "30179036456f4ab606c522a81657ffcea2bec01940b9d441818b6c283d74ee6e",
+    "reconstruction_trajectory_summary.csv": "48e697c868677663823c9fcc8ad17ca34baf61c3723b03deb788f71576499c40"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "status": "REVIEWED_RQ1_REVISION_NOT_FROZEN_OVERWRITE",
+  "frozen_baseline_rows": 5729,
+  "review_flagged_rows": 2054,
+  "manually_changed_rows": 41,
+  "B1926": "frozen original retained",
+  "normalized_rows": 11351,
+  "normalized_rows_with_changed_nds": 209,
+  "frozen_scale_reproduced": true,
+  "frozen_token_nds_max_gap": 0.0,
+  "frozen_summary_point_and_ci_reproduced": true,
+  "nonsegmental_results_unchanged": true,
+  "axes_fixed": "Original frozen speaker vowel axes remain fixed; RQ2 not reanalyzed",
+  "input_sha256": {
+    "review.csv": "9e2321804412e892a57103e70d4d7997694206cb8015b2746911644e7987a386",
+    "changed_rows.csv": "02aca24153359d3a6c349009f2a6e4374816f313f2eaa168ce5cdc6b0f429f18",
+    "natural_vowel_tokens.csv": "92ce7774841e16a1efaa9bfa0f15a2504e5078910ec183d3e41375ede7122d9b",
+    "natural_vowel_scales.csv": "59656d2938b1d0b30b3d4074d0c5fe32fa8ce02b960990813e5c3a7f015395da",
+    "preservation_normalized_long.csv": "6a5dd5332fbceb3be2dbb351803ea7067294e806e590bed73258d29a27e98a92",
+    "preservation_model_trait_summary.csv": "ac8c73a223dd00833a912d36665fbf6f577006e65ab59fc909e8cab156c729fd",
+    "preservation_speaker_trait_summary.csv": "4c06af5ce0d7c9b86d1a954c3edde317d2231b15804c6fc183bfa3c06e5c17d3"
+  },
+  "output_sha256": {
+    "model_delta.csv": "085014460a06bccbda750372d043fa2bc3a40d22c0ea9b222908dbae517d1a21",
+    "natural_vowel_scales.csv": "76dd7bc61774f268e26720d43f0b4e5e9f8e5b480962eff7b6c31501fc8e8562",
+    "natural_vowel_tokens.csv": "7f1c887ae90eee6ef53699d04c5e9645c549fa94297997476e11a56d439c5733",
+    "preservation_model_trait_summary.csv": "677daaffa14d25e079e9d04d13ecd5ee729e35d5f880af61aafa5379a69ddd43",
+    "preservation_normalized_long.csv": "50906f802a743deff92db8cd4f69f508b3e2ed46cd0f24af2f3a148085c8442d",
+    "preservation_speaker_trait_summary.csv": "c639afebe8540cd65431e4be42012facbae69532796c0b349fdd9ec0ac1156eb"
+  },
+  "interpretation": "Post hoc data correction of 41 C-baseline vowels using existing A original/clone measurements; no synthesis or realignment."
+}

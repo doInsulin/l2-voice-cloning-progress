@@ -1,0 +1,22 @@
+{
+  "frozen_reproduction_exact": {
+    "geometry_natural_scales.csv": true,
+    "geometry_token_metrics.csv": true,
+    "geometry_speaker_results.csv": true,
+    "geometry_overall_results.csv": true
+  },
+  "support": {
+    "common_strict_tokens": 214,
+    "common_track_tokens": 422,
+    "geometry_rows": 1667
+  },
+  "rq1_geometry_only": true,
+  "rq2_step2_untouched": true,
+  "source_natural_dynamic_sha256": "2d2d08357cbb39ac55c3bf4867c8bd4c02244efa70204c54ebb10d7140af014a",
+  "output_sha256": {
+    "geometry_natural_scales.csv": "28f7809b290e117a2ca79ea3401f676877544ec4dbf7be4173b4ba67bf07d425",
+    "geometry_overall_results.csv": "9fe5d25d0ec0d433d4c12fc17eb5fc9be1859902c949e3913ad6e10b057d0483",
+    "geometry_speaker_results.csv": "78ac7ab814991746be96119e5c05fe22f093d378e0392cc1881bcb99bde1e324",
+    "geometry_token_metrics.csv": "311504f69f0a725ab1d365e685c0faeab39fb6ec40f2c47129a63f8d5c402cb0"
+  }
+}

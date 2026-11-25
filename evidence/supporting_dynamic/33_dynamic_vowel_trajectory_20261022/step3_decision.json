@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-22",
+  "decision": "DO_NOT_START_GENERATION",
+  "gate": "Step 1 shows measurable direction-vector relations, but Step 2 does not establish a coherent five-point shape or stage-specific matched-control response; IH strict dynamic support is 18 pairs/9 speakers with no >=4-pair speaker subset.",
+  "existing_data_limit": "Observational preservation and reconstruction data cannot identify active reference trajectory transfer.",
+  "thesis_decision": "Do not add new results to main thesis conclusions; preserve frozen midpoint claims. Exploratory appendix only if useful and clearly labelled.",
+  "new_audio_generated": false,
+  "model_added": false
+}

@@ -1,0 +1,59 @@
+{
+  "status": "LOCALIZED_VOWEL_INTERVENTION_DESIGN_FROZEN_BEFORE_REFERENCE_MANIPULATION",
+  "date": "2026-10-07",
+  "seed": 20261007,
+  "system": "F5-TTS",
+  "speaker_count": 13,
+  "eligible_speakers": [
+    "BWC",
+    "ERMS",
+    "LXC",
+    "MBMPS",
+    "NCC",
+    "NJS",
+    "PNV",
+    "SKA",
+    "TLV",
+    "TXHC",
+    "YBAA",
+    "YDCK",
+    "YKWK"
+  ],
+  "excluded_speakers": {
+    "ASI": "NO_4P5_TO_8S_HELDOUT_REFERENCE_WITH_TWO_STRICT_EH_TOKENS",
+    "EBVS": "EH_TO_AE_AXIS_NOT_ESTABLISHED",
+    "SVBI": "NO_4P5_TO_8S_HELDOUT_REFERENCE_WITH_TWO_STRICT_EH_TOKENS"
+  },
+  "target_phone": "EH",
+  "contrast_axis": "AE_TO_EH",
+  "conditions": {
+    "SHIFTED_A": "-speaker-specific p",
+    "ORIGINAL": "unaltered",
+    "SHIFTED_B": "+speaker-specific p"
+  },
+  "reference_shift": "all strict-QC EH intervals in one held-out natural reference; F1/F2 multiplied by exp(±p*axis_vector)",
+  "reference_resynthesis": "Praat LPC inverse filtering plus modified FormantGrid; sample count restored; RMS matched; within-phone raised-cosine blend",
+  "target_texts": 4,
+  "planned_generations": 156,
+  "seed_policy": "same deterministic seed for the three conditions of a speaker-target",
+  "primary_estimand": "speaker-equal slope of generated EH axis score on measured reference EH axis score",
+  "secondary_outcomes": [
+    "pointwise_F1_F2",
+    "vowel_duration",
+    "F0_median_and_range",
+    "ECAPA_cosine"
+  ],
+  "primary_generalization_unit": "speaker",
+  "minimum_speakers_gate": 12,
+  "reference_selection_uses_clone_results": false,
+  "input_hashes": {
+    "natural_dynamic_vowels.csv": "9f2e2ef96c45cd08a4cf6d8e0692a192177732bd7e7579d98dfee1af3ff23519",
+    "natural_vowel_axes.json": "7ff8fb47fe7e053af17984bf95a69ce826a77093d4ea217470a4309cddd2db07",
+    "final_baseline_pool_manifest.csv": "0607b0ed375de4f9277a5a99751716a46543e5e272d50e1369c4128b2c9ae9a6"
+  },
+  "manifest_hashes": {
+    "vowel_reference_selection.csv": "608c093d734afa2e3df82c3386c5a22becbc760b56968b7f42a7f401f28cefde",
+    "vowel_target_manifest.csv": "987b96a0cb78897b7642b7ffcb028de4268f20d1426a2398fb4ebf12c12a620d"
+  },
+  "interpretive_boundary": "Measured acoustic transfer is not perceptual category transfer or evidence for an internal vowel channel."
+}

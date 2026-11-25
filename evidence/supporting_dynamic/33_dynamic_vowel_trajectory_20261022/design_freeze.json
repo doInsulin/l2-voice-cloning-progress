@@ -1,0 +1,39 @@
+{
+  "status": "FROZEN_BEFORE_TRAJECTORY_GEOMETRY_AND_RECONSTRUCTION_ANALYSIS",
+  "date": "2026-10-22",
+  "seed": 20261022,
+  "scope": "Output-acoustic five-point log(F1,F2) trajectories; no audio generation and no thesis manuscript edits",
+  "time_points_pct": [20, 35, 50, 65, 80],
+  "inputs_sha256": {
+    "research/27_dynamic_vowel_analysis/dynamic_vowel_tokens.csv": "18f00661b92954385d23b33a849d8d8be989213ef4b5ec9cd8b4fa2e14307ba9",
+    "research/27_dynamic_vowel_analysis/natural_dynamic_vowels.csv": "9f2e2ef96c45cd08a4cf6d8e0692a192177732bd7e7579d98dfee1af3ff23519",
+    "research/final_confirmatory_experiment/features/f5_tts_segmental_tokens.jsonl": "48ce33cfa7044122d5230e072b2b34dbe3b44b68cee63a482ae18be5850a0cd4",
+    "research/final_confirmatory_experiment/segmental_pair_qc.csv": "5f29053a0716ec21ff244f7516f06d93facf02d2863a62792d8ff7e7491644fd",
+    "research/final_confirmatory_experiment/natural_vowel_axes.json": "7ff8fb47fe7e053af17984bf95a69ce826a77093d4ea217470a4309cddd2db07"
+  },
+  "step1": {
+    "primary_support": "same 214-token three-model common strict dynamic QC intersection as frozen dynamic analysis",
+    "sensitivity": ["model-specific strict dynamic QC", "three-model common track QC"],
+    "trajectory_geometry": {
+      "position": "two-dimensional mean of five log-formant points",
+      "direction": "two-dimensional 80%-minus-20% displacement vector",
+      "path_length": "sum of four adjacent Euclidean log-formant lengths",
+      "curvature": "50% vector minus midpoint of 20% and 80% vectors",
+      "temporal_asymmetry": "(20%-to-50% path length minus 50%-to-80% path length)/total path length"
+    },
+    "comparison": "clone-original geometry error divided by speaker-and-vowel median of up to 200 deterministic held-out original-original pairs in distinct utterances",
+    "inference": "speaker-equal means, equal vowel weighting for pooled vowel summary, 95% speaker bootstrap intervals; each trajectory is one token"
+  },
+  "step2": {
+    "source_pairs": "frozen final F5 EH_TO_AE and IH_TO_IY error/control pairs with pair_status PASS (39 and 56 before new dynamic QC)",
+    "extraction": "existing WAVs and frozen phone intervals; reuse the five-point Praat Burg extractor and frozen speaker ceilings, no new alignment or synthesis",
+    "primary_qc": "frozen pair PASS plus both roles passing strict five-point dynamic QC; failed pair excluded as a unit",
+    "sensitivity": ["track QC duration 0.04-0.40 s", "at least four primary pairs per speaker"],
+    "estimand": "for each matched pair, [clone-error minus original-error] minus [clone-control minus original-control], a five-point 2D log-formant function",
+    "decomposition": "mean trajectory translation plus mean-centered dynamic residual; canonical-axis projection of translation uses frozen speaker-specific midpoint axis; early-to-late scalar contrasts and a speaker sign-flip omnibus test describe shape",
+    "inference": "speaker-equal estimates with 95% speaker bootstrap; five points are one multivariate outcome, never independent replicates",
+    "comparison_boundary": "new strict QC may shrink the original 39/56 pair support; original midpoint DID remains the frozen confirmatory result"
+  },
+  "step3_gate": "Only design or run midpoint-fixed reference generation if steps 1-2 show consequential dynamic ambiguity that existing matched and preservation data cannot answer; record decision before any generation",
+  "claims": "Results are exploratory acoustic follow-up. No mechanism, listener category, perceptual correction, or active reference transfer claim without a controlled intervention. No inclusion in thesis conclusions before QC, speaker bootstrap, and sensitivity review."
+}

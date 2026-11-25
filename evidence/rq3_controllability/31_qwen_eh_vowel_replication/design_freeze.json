@@ -1,0 +1,13 @@
+{
+  "status": "FROZEN_BEFORE_QWEN_GENERATION",
+  "model": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+  "mode": "icl_audio_text",
+  "model_revision": "5d83992436eae1d760afd27aff78a71d676296fc",
+  "model_sha256": "180b3b10eb1c9f1b4db7806d5475bae3071c0243c299d49926bab1da3b6946f6",
+  "speech_tokenizer_sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258",
+  "qwen_ih_design_sha256": "a1d47f7e08b0ac1fb35974fee3437d5f382f3ccabd0edea9c61247929271f1e8",
+  "f5_eh_manifest_sha256": "102c5b7d6f9714b782c4327c83f72518cfff1b6f88e9637d7fd130c80ebee542",
+  "f5_eh_reference_ecapa_qc_sha256": "5781c56b39495cc78441473699f5c95247abec85a2be8188429d52c51e7ccb29",
+  "f5_eh_reference_manifest_sha256": "2f0aa39e02c18380eb4286405eb9ef34e212a42d29a32606c94bddfe4493fb1d",
+  "substitution": "Only model/interface and output path differ from frozen F5 EH; same measured reference WAV, text, target and numeric seed."
+}

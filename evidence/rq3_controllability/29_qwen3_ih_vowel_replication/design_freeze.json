@@ -1,0 +1,77 @@
+{
+  "status": "FROZEN_BEFORE_REFERENCE_MANIPULATION",
+  "date": "2026-10-07",
+  "seed": 20261008,
+  "model": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+  "mode": "icl_audio_text",
+  "model_revision": "5d83992436eae1d760afd27aff78a71d676296fc",
+  "model_sha256": "180b3b10eb1c9f1b4db7806d5475bae3071c0243c299d49926bab1da3b6946f6",
+  "speech_tokenizer_sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258",
+  "speakers": [
+    "BWC",
+    "ERMS",
+    "LXC",
+    "MBMPS",
+    "NCC",
+    "NJS",
+    "PNV",
+    "SKA",
+    "TLV",
+    "TXHC",
+    "YBAA",
+    "YKWK"
+  ],
+  "target_ids": [
+    "arctic_a0029",
+    "arctic_a0127",
+    "arctic_a0005"
+  ],
+  "target_phone": "IH",
+  "axis": "IY_TO_IH",
+  "conditions": [
+    "SHIFTED_A",
+    "ORIGINAL",
+    "SHIFTED_B"
+  ],
+  "reference_selection": "heldout_C;4.5to8s;>=2_strict_IH;rank_count_duration_uid;first_pre-generation_QC_pass",
+  "manipulation": "all strict IH intervals; same LPC/FormantGrid code and thresholds as F5 EH; nominal p +/-0.35, log-formant cap 0.12",
+  "reference_qc": {
+    "all_formant_states_pass": true,
+    "valid_tokens_all": true,
+    "min_end_contrast_p": 0.2,
+    "max_abs_rms_shift_db": 1.5,
+    "max_clip_fraction": 0.001,
+    "max_abs_f0_median_shift_st": 0.5,
+    "max_abs_f0_range_shift_st": 1.0,
+    "min_ecapa_cosine_raw": 0.9,
+    "min_ecapa_cosine_sham": 0.95
+  },
+  "minimum_speakers_after_reference_qc": 8,
+  "targets_per_speaker": 3,
+  "planned_max_generations": 108,
+  "primary_estimand": "speaker-equal within-target generated IH-axis trajectory slope on measured reference IH-axis score",
+  "primary_support": "complete strict three-condition matched IH tokens",
+  "secondary": [
+    "five_point_axis_response",
+    "vowel_duration",
+    "F0_median_and_range",
+    "total_duration",
+    "ECAPA_cosine"
+  ],
+  "bootstrap": {
+    "resample_unit": "speaker",
+    "draws": 10000,
+    "seed": 20261008
+  },
+  "input_hashes": {
+    "natural_dynamic_vowels.csv": "9f2e2ef96c45cd08a4cf6d8e0692a192177732bd7e7579d98dfee1af3ff23519",
+    "natural_vowel_axes.json": "7ff8fb47fe7e053af17984bf95a69ce826a77093d4ea217470a4309cddd2db07",
+    "final_baseline_pool_manifest.csv": "0607b0ed375de4f9277a5a99751716a46543e5e272d50e1369c4128b2c9ae9a6",
+    "f5_speaker_list": "ac75b51c77e3c793be6951b9cd294bca2faf5ec2d6eef9612160ab53cb695dd9"
+  },
+  "manifest_hashes": {
+    "reference_candidates.csv": "de3e9201bf74bdb86352813ef8d40a918f1dc32df167647a58e63360e2a95345",
+    "target_manifest.csv": "249dae7c710e370d2872e2ca0e87c2496f451a07145b043c1bc3c8ae4fd48813"
+  },
+  "interpretive_boundary": "Acoustic output response only; no inference about perceptual category or internal mechanism."
+}
